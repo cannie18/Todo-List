@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <h1 class="title">Práctica 1 - Todo List</h1>
+    <form class="form" id="form" action="#">
+      <input class="form__task" id="task" type="text" name="task"/>
+      <input class="form__date" id="date" type="date" name="date"/>
+      <div class="form__priority" id="priority">
+        <div class="form__priority__container">
+          <input class="form__priority__option" id="red" type="radio" name="priority" value="red"/>
+          <label class="form__priority__label" for="red"></label>
+        </div>
+        <div class="form__priority__container"></div>
+        <div class="form__priority__container">
+          <input class="form__priority__option" id="yellow" type="radio" name="priority" value="yellow"/>
+          <label class="form__priority__label" for="yellow"></label>
+        </div>
+        <div class="form__priority__container"></div>
+        <div class="form__priority__container">
+          <input class="form__priority__option" id="green" type="radio" name="priority" value="green"/>
+          <label class="form__priority__label" for="green"></label>
+        </div>
+      </div>
+      <button class="form__submit" id="submit"><img class="form__submit__img" src="assets/images/pencil.svg" alt=""/></button>
+    </form>
+    <div id="error-message"></div>
+    <div class="tasks" id="tasks"></div>
+    <script src="js/scripts-min.js"></script>
+  </body>
+</html>
